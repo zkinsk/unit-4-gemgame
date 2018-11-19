@@ -1,0 +1,81 @@
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+body {
+    font-family: 'Lora', serif;
+}
+h1 {
+    font-size: 2em;
+}
+header {
+    margin-top: 20px;
+    background-color: #d66f00;
+    width: 600px;
+    height: 50px;
+}
+header h1 {
+    position: relative;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#instructions {
+    margin-top: 10px;
+    width: 600px;
+    height: 200px;
+    background-color: #f5cea5;
+}
+#targetNum{
+    float: left;
+    background-color: #2fb67b;
+    width: 295px;
+    height: 100px;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+#targetNum h2 {
+    position: relative;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+#score{
+    float: left;
+    background-color: #14e6e6;
+    width: 295px;
+    height: 100px;
+    margin-top: 10px;
+}
+.gems {
+    float:left;
+    background-color: #fff5eb;
+    width: 140px;
+    height: 100px;
+    margin-right: 13.3333px;
+    margin-top: 10px;
+    /* border: black 2px solid; */
+}
+.gems img {
+    max-height: 100px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    mix-blend-mode: darken;
+}
+#totalScore {
+    background-color: #1daa9f;
+    margin-top: 10px;
+    width: 600px;
+    height: 50px;
+}
+#scoreTally {
+    background-color: #1daa9f;
+    margin-top: 10px;
+    width: 600px;
+    height: 50px;
+}
