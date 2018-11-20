@@ -8,39 +8,48 @@
     <link rel="stylesheet" type="text/css" media="screen" href="assets/css/reset.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
     <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
-    <script src="assets/javascript/game.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
 </head>
 <body onload="startGame()">
     <header>
         <h1>Crystals Collector</h1>
     </header>
     <div id="instructions">
-        <p>Instruction</p>
+        <h4>Instructions:</h4>
+        <p>This game begins with a randomly generated target number.  Each crystal has randomly been given a hidden value of 1 - 12. </p>
+        <p>Click on the various crystals and try to match the target number.</p>
+        <p>The game will automatically re-set when you match the target number or go beyond it.</p>
+
     </div>
     <div class="clearfix">
-        <div id="targetNum"><h2>Target Number</h2></div>
-        <div id="score">Score</div>
+        <div id="targetNumBox">
+            <h4>Target Number:</h4>
+            <h2 id="targetNum">Target Number</h2></div>
+        <div id="score"><h5>SCORE:</h5>
+            <div><h5>WINS: <span id="wins"></span></h5></div>
+            <div><h5>LOSSES: <span id="losses"></span></h5></div>
+            <div id="resultBox"><h1 id="result">Result</h1></div>
+        </div>
     </div>
     <div class="clearfix">
-        <div class="gems">
+        <div class="gems" crystalValue="0">
             <img src="assets/images/Amthyst.jpeg">
         </div>
-        <div class="gems">
+        <div class="gems" crystalValue="1">
             <img src="assets/images/quartz.jpeg">
         </div>
-        <div class="gems">
+        <div class="gems" crystalValue="2">
             <img src="assets/images/rose_quartz.jpeg">
         </div>
-        <div class="gems">
+        <div class="gems" crystalValue="3">
                 <img src="assets/images/titanium_quartz.jpeg">
         </div>
     </div>
-    <div id="totalScore">Total Score</div>
-    <div id="scoreTally">Score</div>
-
-
-
+    <div id="totalScoreBox"><h2>Your Current Progress:</h2></div>
+    <div id="scoreTallyBox"><h1 id="scoreTally">Score</h1></div>
 
     
 </body>
+<script src="assets/javascript/game.js"></script>
 </html>
