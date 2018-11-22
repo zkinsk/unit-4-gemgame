@@ -3,6 +3,10 @@
     clear: both;
     display: table;
 }
+* {
+    border: transparent 1px solid;
+    border-radius: 0.15em;
+}
 body {
     font-family: 'Lora', serif;
     color: white;
